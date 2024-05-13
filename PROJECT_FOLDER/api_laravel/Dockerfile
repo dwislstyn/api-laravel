@@ -8,6 +8,7 @@ ENV \
 
 # copy semua project ke dalam container menggunakan flag variabel APP_DIR
 COPY . $APP_DIR
+RUN mv $APP_DIR/.env.example $APP_DIR/.env
 
 # install library kebutuhan PHP (sepertinya ini untuk yang standar)
 RUN apk add --update \

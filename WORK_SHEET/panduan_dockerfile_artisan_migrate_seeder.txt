@@ -1,6 +1,6 @@
 1. docker pull postgres
 2. docker run --name db_local_postgres -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres:latest
-3.  cd Worksheet_api/api_laravel
+3.  cd PROJECT_FOLDER/api_laravel
     docker build . -t api-laravel-images:latest
 4. docker run -p 6001:6001 --name api-laravel-container api-laravel-images:latest
 5. php artisan migrate
