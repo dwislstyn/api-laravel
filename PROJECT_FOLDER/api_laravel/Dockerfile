@@ -28,7 +28,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
 
 # buka aplikasi dan install composer
 RUN cd $APP_DIR && composer self-update --1
-RUN cd $APP_DIR && php artisan key:generate
+# RUN cd $APP_DIR && php artisan key:generate
 
 RUN apk update \
     && apk add --no-cache postgresql-dev postgresql-client \
