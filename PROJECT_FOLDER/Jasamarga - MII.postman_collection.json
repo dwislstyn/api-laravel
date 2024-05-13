@@ -1,0 +1,510 @@
+{
+	"info": {
+		"_postman_id": "eeb91f10-edef-49dd-9d7b-452d516fc3e8",
+		"name": "Jasamarga - MII",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14349306"
+	},
+	"item": [
+		{
+			"name": "Education Employee",
+			"item": [
+				{
+					"name": "insertDataEducationEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employee_id\": \"2\",\n    \"name\": \"Universitas Negeri Jakarta\",\n    \"level\": \"Strata 1\",\n    \"description\": \"Sarjana\",\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/insertDataEducationEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"insertDataEducationEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDataEducationEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_education\": 2,\n    \"name\": \"Universitas Negeri Jakarta\",\n    \"level\": \"Strata 1\",\n    \"description\": \"Sarjana\",\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/updateDataEducationEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"updateDataEducationEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDataEducationEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id_education\": 11\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/deleteDataEducationEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"deleteDataEducationEmployee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile Employee",
+			"item": [
+				{
+					"name": "insertDataProfileEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employee_id\": \"1\",\n    \"place_of_birth\": \"Jakarta\",\n    \"date_of_birth\":\"1997-05-02\",\n    \"gender\":\"\",\n    \"is_married\": true,\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/insertDataProfileEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"insertDataProfileEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDataProfileEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employee_id\": \"2\",\n    \"place_of_birth\": \"Babelan8\",\n    \"date_of_birth\":\"1998-05-02\",\n    \"gender\":\"Perempuan\",\n    \"is_married\": false,\n    \"created_by\": \"admin2\",\n    \"updated_by\": \"admi2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/updateDataProfileEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"updateDataProfileEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDataProfileEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employee_id\": \"30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/deleteDataProfileEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"deleteDataProfileEmployee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Family Employee",
+			"item": [
+				{
+					"name": "insertDataFamilyEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employee_id\": 1,\n    \"name\": \"Marni\",\n    \"indentifier\": \"32100594109960002\",\n    \"job\": \"Ibu rumah tangga\",\n    \"place_of_birth\": \"Denpasar\",\n    \"date_of_birth\": \"1995-10-17\",\n    \"religion\": \"Islam\",\n    \"is_life\": true,\n    \"is_divorced\": false,\n    \"relation_status\": \"Istri\",\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/insertDataFamilyEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"insertDataFamilyEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDataFamilyEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"family_id\":17,\n    \"employee_id\": 1,\n    \"name\": \"Marni5\",\n    \"indentifier\": \"32100594109960002\",\n    \"job\": \"Ibu rumah tangga\",\n    \"place_of_birth\": \"Denpasar\",\n    \"date_of_birth\": \"1995-10-17\",\n    \"religion\": \"Islam\",\n    \"is_life\": true,\n    \"is_divorced\": false,\n    \"relation_status\": \"Istri\",\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\",\n    \"created_at\": \"2024-04-12\",\n    \"updated_at\": \"2024-04-12\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/updateDataFamilyEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"updateDataFamilyEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteFamilyEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"family_id\":39\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/deleteFamilyEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"deleteFamilyEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inquiryListEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"\",\n    \"nik\":\"\",\n    \"name\":\"\",\n    \"is_active\":\"\",\n    \"created_by\":\"\",\n    \"updated_by\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/inquiryListEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"inquiryListEmployee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "inquiryListEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"\",\n    \"nik\":\"\",\n    \"name\":\"\",\n    \"is_active\":\"\",\n    \"created_by\":\"\",\n    \"updated_by\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/inquiryListEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"inquiryListEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inquiryEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":\"\",\n    \"nik\":\"11016\",\n    \"name\":\"\",\n    \"is_active\":true,\n    \"created_by\":\"\",\n    \"updated_by\":\"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/inquiryEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"inquiryEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "insertDataEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nik\": \"11016\",\n    \"name\": \"Jarot\",\n    \"is_active\": true,\n    \"start_date\": \"2024-01-01\",\n    \"end_date\": \"2024-01-30\",\n    \"created_by\": \"Dwi Sulistyo Nugroho\",\n    \"updated_by\": \"Dwi Sulistyo Nugroho\",\n    \"data_keluarga\": [\n        {\n            \"name\": \"Marni\",\n            \"indentifier\": \"32100594109960002\",\n            \"job\": \"Ibu rumah tangga\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\"\n        },\n        {\n            \"name\": \"Marni2\",\n            \"indentifier\": \"32100594109960003\",\n            \"job\": \"Ibu rumah tangga\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\"\n        }\n    ],\n    \"data_education\": [\n        {\n            \"name\": \"Universitas Negeri Jakarta\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Sarjana\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\"\n        }\n    ],\n    \"data_profile\": {\n        \"place_of_birth\": \"Jakarta\",\n        \"date_of_birth\": \"1997-05-02\",\n        \"gender\": \"\",\n        \"is_married\": true,\n        \"created_by\": \"admin\",\n        \"updated_by\": \"admin\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/insertDataEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"insertDataEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDataEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nik\": \"11014\",\n    \"name\": \"Jarot Baru\",\n    \"is_active\": true,\n    \"start_date\": \"2024-01-01\",\n    \"end_date\": \"2024-01-30\",\n    \"created_by\": \"Dwi Sulistyo Nugroho\",\n    \"updated_by\": \"Dwi Sulistyo Nugroho\",\n    \"data_keluarga\": [\n        {\n            \"id\":\"36\",\n            \"name\": \"MarniBaru\",\n            \"indentifier\": \"32100594109960002\",\n            \"job\": \"Ibu rumah tangga\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Istri\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\"\n        },\n        {\n            \"id\":\"35\",\n            \"name\": \"MarniLama\",\n            \"indentifier\": \"32100594109960003\",\n            \"job\": \"Ibu rumah tangga\",\n            \"place_of_birth\": \"Denpasar\",\n            \"date_of_birth\": \"1995-10-17\",\n            \"religion\": \"Islam\",\n            \"is_life\": true,\n            \"is_divorced\": false,\n            \"relation_status\": \"Anak\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\"\n        }\n    ],\n    \"data_education\": [\n        {\n            \"id\":\"13\",\n            \"name\": \"Universitas Negeri Semarang\",\n            \"level\": \"Strata 1\",\n            \"description\": \"Sarjana\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\"\n        }\n    ],\n    \"data_profile\": {\n        \"place_of_birth\": \"Jakarta\",\n        \"date_of_birth\": \"1997-05-02\",\n        \"gender\": \"\",\n        \"is_married\": true,\n        \"created_by\": \"admin5\",\n        \"updated_by\": \"admin\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/updateDataEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"updateDataEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDataEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"employee_id\":36\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/deleteDataEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"deleteDataEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reportDataEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nik\":\"11016\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6001/api/v1/reportDataEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"api",
+								"v1",
+								"reportDataEmployee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
